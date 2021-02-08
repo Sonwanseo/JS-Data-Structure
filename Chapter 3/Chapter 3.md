@@ -280,3 +280,15 @@ Math.round(Math.random() * 25) + 5; // 5부터 30까지의 정수
 Math.ceil(Math.random() * 10)  - 100; // -100부터 -90까지의 정수
 ```
 
+### 요약
+
+자바스크립트의 모든 숫자는 64비트 부동소수점 형태임을 기억하자.
+가능한 가장 작은 부동소수점 증가를 얻기 위해서는 NumberEPSILON을 사용해야 한다.
+자바스크립트의 가장 큰 수와 가장 작은 수는 다음 등식과 같이 요약될 수 있다.
+
+```javascript
+-Infinity < Number.MIN_SAFE_INTEGER < 0 < Number.MIN_VALUE < Number.MAX_SAFE_INTEGER < Number.MAX_VALUE < Infinity
+```
+
+소수 검증과 소인수분해는 암호화와 같이 다양한 컴퓨터 과학 적용 분야에서 사용되는 개념이다.
+마지막으로 자바스크립트에서 무작위 수를 생성하기 위해 Math.random()을 사용한다.
