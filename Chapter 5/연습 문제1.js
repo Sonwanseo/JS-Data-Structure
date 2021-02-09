@@ -33,4 +33,4 @@ function findSumBetter(arr, weight) {
 // 시간 복잡도: O(n)
 // 공간 복잡도: O(n)
 
-console.log(findSum([1, 2, 3, 4, 5], 8))
+console.log(findSum([1, 2, 3, 4, 5], 8));
