@@ -230,3 +230,72 @@ Math.min(...array2); // -123
 ```
 
 ### 요약
+
+### 자바스크립트 함수형 배열 메소드
+
+자바스크립트에서 특정 부분을 함수형 프로그래밍 언어처럼 작성할 수 있다.
+명령형 프로그래밍과 달리 자바스크립트는 프로그램의 상태를 상관하지 않는다.
+루프를 사용하지 않고 함수 호출만을 사용한다.
+
+##### map
+
+map 함수는 매개변수로 전달된 함수 변환을 배열의 모든 항목에 적용한 다음 변환이 적용된 항목들을 포함하는 신규 배열을 반환한다.
+
+```javascript
+[1, 2, 3, 4, 5, 6, 7].map(function(value) {
+  return value * 10;
+});
+// [10, 20, 30, 40, 50, 60, 70]
+```
+
+##### filter
+
+filter 함수는 배열 내 항목들 중 함수의 매개변수로 전달된 조건을 충족시키는 배열들만 반환한다.
+
+```javascript
+[100, 2003, 10, 203, 333, 12].filter(function(value) {
+  return value > 100;
+});
+// [2003, 203, 333]
+```
+
+##### reduce
+
+reduce 함수는 매개변수로 전달된 변환 함수를 사용해 배열의 모든 항목을 하나의 값으로 결합한다.
+
+```javascript
+var sum = [0, 1, 2, 3, 4].reduce(function(prevVal, currentVal, index, array) {
+  return prevVal + currentVal;
+});
+console.log(sum); // 10을 출력한다.
+```
+
+reduce 함수는 initialValue를 두 번째 인자로 받을 수 있다.
+해당 인자는 감소 값을 초기화한다.
+
+```javascript
+var sum = [0, 1, 2, 3, 4].reduce(function (prevVal, currentVal, index, array) {
+  return prevVal + currentVal;
+}, 1);
+console.log(sum); // 11을 출력한다.
+```
+
+### 다차원 배열
+
+자바스크립트에는 다차원 배열이 없다.
+
+대신에 '가변' 배열이 있다.
+가변 배열은 항목이 배열인 배열이다.
+가변 배열의 항목은 차원과 크기가 다를 수 있다.
+
+```javascript
+function Matrix(rows, columns) {
+  var jaggedarray = new Array(columns);
+  for(let i = 0; i < columns; i++) {
+    jaggedarray[i] = new Array(rows);
+  }
+  return jaggedarray;
+}
+```
+
+가변 배열의 항목들을 접근하기 위해서는 행과 열을 지정해야 한다.
