@@ -26,3 +26,4 @@ the source code from
 - [Chapter 13. 연결 리스트](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2013)
 - [Chapter 14. 캐싱](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2014)
 - [Chapter 15. 트리](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2015)
+- [Chapter 16. 힙](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2016)
