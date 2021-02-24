@@ -28,4 +28,5 @@ the source code from
 - [Chapter 15. 트리](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2015)
 - [Chapter 16. 힙](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2016)
 - [Chapter 17. 그래프](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2017)
+- [Chapter 18. 고급 문자열](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2018)
 
