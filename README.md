@@ -30,4 +30,5 @@ the source code from
 - [Chapter 17. 그래프](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2017)
 - [Chapter 18. 고급 문자열](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2018)
 - [Chapter 19. 동적 프로그래밍](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2019)
+- [Chapter 20. 비트 조작](https://github.com/Sonwanseo/JS-Data-Structure/tree/master/Chapter%2020) 
 
