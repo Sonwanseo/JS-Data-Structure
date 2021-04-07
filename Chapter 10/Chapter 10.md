@@ -184,7 +184,7 @@ function quickSort(items) {
   return quickSortHelper(items, 0, items.length - 1);
 }
 
-function quickSortHelper(itmes, left, right) {
+function quickSortHelper(items, left, right) {
   let index;
   
   if(items.length > 1) {
