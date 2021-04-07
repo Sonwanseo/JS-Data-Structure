@@ -184,7 +184,7 @@ function quickSort(items) {
   return quickSortHelper(items, 0, items.length - 1);
 }
 
-function quickSortHelper(itmes, left, right) {
+function quickSortHelper(items, left, right) {
   let index;
   
   if(items.length > 1) {
@@ -201,7 +201,7 @@ function quickSortHelper(itmes, left, right) {
 function partition(array, left, right) {
   let pivot = array[Math.floor((right + left) / 2)];
   
-  while(let <= right) {
+  while(left <= right) {
     while(pivot > array[left]) left++;
   	while(pivot < array[right]) right--;
     
