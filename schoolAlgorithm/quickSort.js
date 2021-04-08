@@ -10,10 +10,8 @@ function quickSortHelper(items, left, right) {
         // 피벗 기준 좌우 정렬
         index = partition(items, left, right);
 
-        // 분할 정복(피벗 기준 좌측 배열 분할)
         if (left < index - 1) quickSortHelper(items, left, index - 1);
 
-        // 분할 정복(피벗 기준 우측 배열 분할)
         if (index < right) quickSortHelper(items, index, right);
     }
 
@@ -23,6 +21,7 @@ function quickSortHelper(items, left, right) {
 function partition(array, left, right) {
     // 중앙 인덱스를 피벗으로 설정
     let pivot = array[Math.floor((right + left) / 2)];
+    console.log(pivot);
 
     while (left <= right) {
         while (pivot > array[left]) left++;
@@ -37,6 +36,7 @@ function partition(array, left, right) {
         }
     }
 
+    console.log(left);
     return left;
 }
 
